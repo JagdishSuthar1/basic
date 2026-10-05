@@ -1,0 +1,51 @@
+artifact_path: mlflow-artifacts:/1/models/m-5041e24f33314c2593c90e31fbb5a4c7/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-5041e24f33314c2593c90e31fbb5a4c7
+model_size_bytes: 18387
+model_uuid: m-5041e24f33314c2593c90e31fbb5a4c7
+prompts: null
+run_id: 7c1751c1fe3b4575a6b736517534fc98
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "transaction_amount_inr", "required": true},
+    {"type": "double", "name": "transaction_channel", "required": true}, {"type":
+    "double", "name": "merchant_category", "required": true}, {"type": "double", "name":
+    "customer_region", "required": true}, {"type": "double", "name": "device_type",
+    "required": true}, {"type": "long", "name": "account_age_months", "required":
+    true}, {"type": "double", "name": "available_balance_inr", "required": true},
+    {"type": "double", "name": "monthly_income_inr", "required": true}, {"type": "double",
+    "name": "credit_limit_inr", "required": true}, {"type": "double", "name": "credit_utilization_pct",
+    "required": true}, {"type": "double", "name": "transactions_last_24h", "required":
+    true}, {"type": "double", "name": "avg_transaction_amount_30d_inr", "required":
+    true}, {"type": "double", "name": "failed_logins_last_24h", "required": true},
+    {"type": "double", "name": "distance_from_usual_location_km", "required": true},
+    {"type": "long", "name": "international_transaction", "required": true}, {"type":
+    "long", "name": "card_present", "required": true}, {"type": "long", "name": "prior_disputes_12m",
+    "required": true}, {"type": "integer", "name": "year", "required": true}, {"type":
+    "integer", "name": "month", "required": true}, {"type": "integer", "name": "day",
+    "required": true}, {"type": "integer", "name": "hour", "required": true}, {"type":
+    "integer", "name": "minute", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-09-28 04:33:00.310203'
